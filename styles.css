@@ -68,3 +68,15 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar > * {
   border: 2px solid;
 }
+
+.main-content {
+  border: 5px solid rgb(166, 226, 26);
+}
+
+.main-content > * {
+  border: 2px solid;
+}
+
+.sidebar-project > * {
+  border: 2px solid rgb(226, 26, 36);
+}
