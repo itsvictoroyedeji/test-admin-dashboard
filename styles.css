@@ -72,10 +72,6 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 
-.sidebar > * {
-  border: 2px solid;
-}
-
 .main-content {
   background-color: rgb(224, 231, 238);
 }
@@ -88,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid rgb(226, 26, 36);
 }
 
-/* General Layout */
+/*------- General Layout --------*/
 
 .container {
   display: grid;
@@ -232,12 +228,15 @@ input[type="search"] {
   padding: 0.1em 1.8em; 
 }
 
+/* Sidebar Layout */
+
 .sidebar {
   color: rgb(255,255,255);
   font-weight: 600;
 }
 
-.sidebar :link {
+.sidebar a:link,
+.sidebar a:visited {
   color: rgb(255,255,255);
   text-decoration: none;
 }
@@ -245,15 +244,33 @@ input[type="search"] {
 .sidebar ul,
 .sidebar li {
   list-style-type: none;
+  line-height: calc(1em + 1.1rem);
 }
 
 .sidebar {
   display: grid;
   align-content: start;
-  gap: 1.7em; 
+  gap: 2em; 
 }
 
 #main-nav-list {
   display: grid;
   padding: 0;
+}
+
+.sidebar .sidebar-header,
+#main-nav-list a {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.sidebar-header span:first-child,
+#main-nav-list a div:first-child {
+  justify-self: center;
+}
+
+.sidebar-header span:last-child {
+  font-size: 1.2rem;
 }
