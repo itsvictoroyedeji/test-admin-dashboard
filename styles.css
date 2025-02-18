@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 225px repeat(3, 1fr);
   grid-template-rows: auto 4fr;
   grid-auto-rows: auto;
 }
@@ -188,7 +188,7 @@ input[type="search"] {
 
 .bottom-header {
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 5fr 3fr;
 }
 
 .bottom-header .user-info-bottom {
@@ -224,5 +224,25 @@ input[type="search"] {
   font-size: 0.8rem;
   font-weight: bold;
   padding: 0.1em 1.5em;
+  width: 100%;
   border-radius: 1em;
+}
+
+.profile-buttons p:first-child .btn {
+  padding: 0.1em 1.7em; 
+}
+
+.sidebar {
+  color: rgb(255,255,255);
+  font-weight: 600;
+}
+
+.sidebar :link {
+  color: rgb(255,255,255);
+  text-decoration: none;
+}
+
+.sidebar ul,
+.sidebar li {
+  list-style-type: none;
 }
