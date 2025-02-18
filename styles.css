@@ -62,12 +62,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Section borders */
 
 .header {
-  border: 5px solid rgb(111,41,97);
-  background-color: rgb(248, 177, 233);
+  /* border: 5px solid rgb(111,41,97);
+  background-color: rgb(248, 177, 233); */
+  box-shadow: 1px;
 }
 
 .header > * {
-  border: 2px solid;
+  /* border: 2px solid; */
 }
 
 .sidebar {
@@ -102,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container > * {
-  padding: 0.8em;
+  padding: 0.9em;
 }
 
 .header {
@@ -122,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
   display: grid;
-  gap: 1.5em;
+  gap: 1.3em;
 }
 
 .top-header {
@@ -132,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .top-header .search-form {
   display: grid;
-  grid-template-columns: 6fr 1fr;
+  grid-template-columns: 10fr 1fr;
 
 }
 
@@ -158,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
 
 input[type="search"] {
   background-color: rgb(227, 234, 241);
-  padding: 0.1em 0.7em;
+  padding: 0.1em 0.8em;
   width: 100%;
   font-size: 16px;
   font-size: 1rem;
@@ -173,15 +174,60 @@ input[type="search"] {
   border: 1px solid rgb(41, 146, 212);
 }
 
+#searchform input[type="search"]:focus::placeholder {
+  color: transparent;
+}
+
 .user-info-top {
   display: grid;
-  grid-template-columns: repeat(2, 1fr) 4fr;
+  grid-template-columns: repeat(2, 1fr) 3fr;
   padding: 0 0.8em;
   place-items: center;
+  gap: 0.5em;
+}
 
+.user-info-top .profile-name {
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
 .bottom-header {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 3fr 2fr;
+}
+
+.bottom-header .user-info-bottom {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 1.1em;
+}
+
+.user-info-bottom .profile-image {
+  justify-self: end;
+}
+
+.user-info-bottom .profile-intro {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.user-info-bottom h2 {
+  font-size: 1.3rem;
+  margin-top: -3px
+}
+
+.profile-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.profile-buttons .btn {
+  background-color: rgb(41, 148, 220);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(41, 146, 209);
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0.1em 1.5em;
+  border-radius: 1em;
 }
