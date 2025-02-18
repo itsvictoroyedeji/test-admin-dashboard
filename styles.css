@@ -50,3 +50,14 @@ h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+/* General Layout */
+
+.header {
+  border: 5px solid rgb(111,41,97);
+}
+
+.top-header,
+.bottom-header {
+  border: 2px solid;
+}
