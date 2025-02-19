@@ -8,7 +8,7 @@ Here's the design I had to remake:
 
 ![1]
 
-And here's the final result: https://github.com/itsvictoroyedeji/test-admin-dashboard
+And here's the final result: https://itsvictoroyedeji.github.io/test-admin-dashboard/
 
 ~ Vic
 

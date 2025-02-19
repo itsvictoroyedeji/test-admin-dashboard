@@ -87,6 +87,7 @@ body {
   grid-template-columns: 225px repeat(3, 1fr);
   grid-template-rows: auto 4fr;
   grid-auto-rows: auto;
+  height: 100%;
 }
 
 .container > * {
@@ -115,7 +116,7 @@ body {
 
 .top-header {
   display: grid;
-  grid-template-columns: 20px 2fr 1fr;
+  grid-template-columns: 20px minmax(250px, 2fr) minmax(200px, 250px);
   align-items: center;
   margin-left: 1.5em;
 }
@@ -127,7 +128,7 @@ body {
 
 .top-header .search-form {
   display: grid;
-  grid-template-columns: 10fr 1fr;
+  grid-template-columns: minmax(200px, 10fr) 1fr;
 }
 
 .search-form .search {
@@ -196,7 +197,8 @@ input[type="search"] {
 .user-info-top .profile-name {
   font-weight: bold;
   font-size: 0.9rem;
-  margin-right: 0.8em;
+  margin-left: 0.8em;
+  justify-self: start;
 }
 
 .bottom-header {
@@ -228,6 +230,9 @@ input[type="search"] {
   display: grid;
   grid-auto-flow: column;
   place-items: center;
+  justify-content: end;
+  gap: 2em;
+  margin-right: 1em;
 }
 
 .profile-buttons .btn {
@@ -307,7 +312,7 @@ input[type="search"] {
 
 .main-content {
   display: grid;
-  grid-template-columns: 8fr 3fr;
+  grid-template-columns: 8fr minmax(200px, 3fr);
   gap: 1.2em;
   padding: 1.2em 1.4em 2.5em 1em;
 }
@@ -444,4 +449,19 @@ input[type="search"] {
   display: block;
   font-weight: initial;
   color:rgb(92, 91, 91);
+}
+
+/* Responsive */
+
+@media screen and (min-width: 87.5em) {
+  .main-content {
+    grid-template-columns: 8fr minmax(200px, 300px);
+  }
+  .bottom-header .user-info-bottom {
+    grid-template-columns: 85px 6fr;
+  }
+  .search-form .search {
+    width: 50%;
+    max-width: 50%;
+  }
 }
