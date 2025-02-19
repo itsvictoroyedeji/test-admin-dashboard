@@ -115,23 +115,28 @@ body {
 
 .top-header {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 20px 2fr 1fr;
+  align-items: center;
+  margin-left: 1.5em;
+}
+
+.top-header .search-icon img {
+  height: 1.1em;
+  width: auto;
 }
 
 .top-header .search-form {
   display: grid;
   grid-template-columns: 10fr 1fr;
-
 }
 
 .search-form .search {
-  position: relative;
   min-height: 1px;
   padding: 0 0.8em;
 
-  justify-self: end;
-  width: 95%;
-  max-width: 95%;
+  justify-self: self-start;
+  width: 98%;
+  max-width: 98%;
 }
 
 #searchform input[type="search"] {
@@ -165,6 +170,10 @@ input[type="search"] {
   color: transparent;
 }
 
+.search > span {
+  position: relative;
+}
+
 .user-info-top {
   display: grid;
   grid-template-columns: repeat(2, 1fr) 3fr;
@@ -173,9 +182,21 @@ input[type="search"] {
   gap: 0.5em;
 }
 
+.user-info-top img {
+  height: 1.2em;
+  width: auto;
+}
+
+.profile-icon img {
+  height: 1.8em;
+  width: auto;
+  opacity: 0.8;
+}
+
 .user-info-top .profile-name {
   font-weight: bold;
   font-size: 0.9rem;
+  margin-right: 0.8em;
 }
 
 .bottom-header {
@@ -264,8 +285,18 @@ input[type="search"] {
 }
 
 .sidebar-header span:first-child,
-#main-nav-list a div:first-child {
+#main-nav-list a svg {
   justify-self: center;
+  height: 1.1em;
+  width: auto;
+  fill: white;
+  margin-top: -0.1em;
+}
+
+.sidebar-header svg {
+  height: 2.5em;
+  width: auto;
+  fill: white;
 }
 
 .sidebar-header span:last-child {
@@ -297,20 +328,20 @@ input[type="search"] {
 
 .project-cards .card {
   display: grid;
-  grid-template-rows: 105px 1fr;
+  grid-template-rows: 100px 1fr;
   background-color:rgb(255, 255, 255);
   color:rgb(92, 91, 91);
   line-height: calc(1em + 0.2rem);
   font-size: 0.8rem;
 
-  padding: 1.8em 1em;
+  padding: 1.8em 1.1em;
   border-radius: 0.4em;
   border-left: 5px solid rgb(237, 180, 57);
   box-shadow: 3px 2px 3px rgb(0 0 0 / 20%);
 }
 
 .card .card-title {
-  color: rgb(0,0,0);
+  color: rgb(17, 17, 17);
   line-height: calc(1em + 0.3rem);
   font-weight: bold;
   font-size: 0.9rem;
@@ -321,12 +352,20 @@ input[type="search"] {
   grid-auto-flow: column;
   justify-content: end;
   gap: 1.5em;
+
+  opacity: 0.8;
+  align-items: center;
+  margin-right: 0.6em;
 }
 
 .card-icons a:link,
 .card-icons a:visited {
   text-decoration: none;
-  color: rgb(34, 34, 34);
+}
+
+.card-icon img {
+  height: 1.5em;
+  width: auto;
 }
 
 /* Project sidebar layout */
@@ -347,7 +386,6 @@ input[type="search"] {
   padding: 2em;
   border-radius: 0.4em;
   box-shadow: 3px 2px 3px rgb(0 0 0 / 20%);
-
 }
 
 .proj-sidebar-1-card h3 {
@@ -387,7 +425,13 @@ input[type="search"] {
 }
 
 .proj-sidebar-2-card .profile-icon {
-  justify-self: center
+  justify-self: center;
+}
+
+.sidebar-2-acct .profile-icon img {
+  height: 2.5em;
+  width: auto;
+  opacity: 0.8;
 }
 
 .proj-sidebar-2-card .icon-info {
