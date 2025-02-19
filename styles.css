@@ -191,7 +191,7 @@ input[type="search"] {
 .profile-icon img {
   height: 1.8em;
   width: auto;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .user-info-top .profile-name {
@@ -209,11 +209,17 @@ input[type="search"] {
 .bottom-header .user-info-bottom {
   display: grid;
   grid-template-columns: 1fr 6fr;
-  gap: 1.1em;
+  gap: 1em;
 }
 
 .user-info-bottom .profile-image {
   justify-self: end;
+}
+
+.user-info-bottom .profile-image img {
+height: 2.7em;
+width: auto;
+opacity: 0.6;
 }
 
 .user-info-bottom .profile-intro {
@@ -231,7 +237,7 @@ input[type="search"] {
   grid-auto-flow: column;
   place-items: center;
   justify-content: end;
-  gap: 2em;
+  gap: 1.5em;
   margin-right: 1em;
 }
 
@@ -436,7 +442,7 @@ input[type="search"] {
 .sidebar-2-acct .profile-icon img {
   height: 2.5em;
   width: auto;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .proj-sidebar-2-card .icon-info {
@@ -463,5 +469,9 @@ input[type="search"] {
   .search-form .search {
     width: 50%;
     max-width: 50%;
+  }
+
+  .profile-buttons {
+    gap: 2em;
   }
 }
