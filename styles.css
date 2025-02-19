@@ -78,6 +78,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /*------- General Layout --------*/
 
+body {
+  font-family: Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
 .container {
   display: grid;
   grid-template-columns: 225px repeat(3, 1fr);
@@ -190,13 +194,13 @@ input[type="search"] {
 }
 
 .user-info-bottom .profile-intro {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: bold;
 }
 
 .user-info-bottom h2 {
   font-size: 1.3rem;
-  margin-top: -3px
+  margin-top: -5px
 }
 
 .profile-buttons {
@@ -256,6 +260,7 @@ input[type="search"] {
   grid-template-columns: 1fr 5fr;
   gap: 0.5em;
   align-items: center;
+  font-size: 0.9rem;
 }
 
 .sidebar-header span:first-child,
@@ -292,13 +297,13 @@ input[type="search"] {
 
 .project-cards .card {
   display: grid;
-  grid-template-rows: 124px 1fr;
+  grid-template-rows: 105px 1fr;
   background-color:rgb(255, 255, 255);
-  color:rgb(43, 42, 42);
-  line-height: 1em;
-  font-size: 0.9rem;
+  color:rgb(92, 91, 91);
+  line-height: calc(1em + 0.2rem);
+  font-size: 0.8rem;
 
-  padding: 1.2em 1em;
+  padding: 1.8em 1em;
   border-radius: 0.4em;
   border-left: 5px solid rgb(237, 180, 57);
   box-shadow: 3px 2px 3px rgb(0 0 0 / 20%);
@@ -306,9 +311,9 @@ input[type="search"] {
 
 .card .card-title {
   color: rgb(0,0,0);
-  line-height: calc(1em + 0.5rem);
+  line-height: calc(1em + 0.3rem);
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .card .card-icons {
@@ -329,16 +334,17 @@ input[type="search"] {
 .sidebar-project {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  gap: 1.6em;
+  gap: 1.4em;
 }
 
 .sidebar-project .proj-sidebar-1-card {
   background-color:rgb(255, 255, 255);
-  color:rgb(43, 42, 42);
-  line-height: calc(1em + 0.1rem);
-  font-size: 0.8rem;
+  color:rgb(92, 91, 91);
 
-  padding: 1.7em;
+  line-height: calc(1em + 0.1rem);
+  font-size: 0.7rem;
+
+  padding: 2em;
   border-radius: 0.4em;
   box-shadow: 3px 2px 3px rgb(0 0 0 / 20%);
 
@@ -358,11 +364,11 @@ input[type="search"] {
 
 .sidebar-project .proj-sidebar-2-card {
   background-color:rgb(255, 255, 255);
-  color:rgb(43, 42, 42);
-  line-height: calc(1em + 0.1rem);
-  font-size: 0.8rem;
 
-  padding: 1.7em;
+  line-height: calc(1em + 0.1rem);
+  font-size: 0.75rem;
+
+  padding: 2em;
   border-radius: 0.4em;
   box-shadow: 3px 2px 3px rgb(0 0 0 / 20%);
 }
@@ -385,10 +391,13 @@ input[type="search"] {
 }
 
 .proj-sidebar-2-card .icon-info {
-  font-weight: bold;
+  font-weight: 500;
+  color: rgb(0,0,0);
+  line-height: calc(1em + 0.2rem)
 }
 
 .proj-sidebar-2-card .icon-info span {
   display: block;
   font-weight: initial;
+  color:rgb(92, 91, 91);
 }
